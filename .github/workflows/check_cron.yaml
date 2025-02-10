@@ -1,4 +1,4 @@
-name: Execute SSH Commands
+name: serv00-baohao SSH 
 
 on:
   schedule:
