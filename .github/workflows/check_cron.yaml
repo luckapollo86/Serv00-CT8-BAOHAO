@@ -3,7 +3,7 @@ name: Execute SSH Commands
 on:
   workflow_dispatch: # 手动触发工作流
   schedule:
-    - cron: "0 10 9 50 * ?" #每月10日上午09:50触发
+    - cron: "0 15 10 10 * ? *" #每月10日上午09:50触发
 jobs:
   execute-commands:
     runs-on: ubuntu-latest
