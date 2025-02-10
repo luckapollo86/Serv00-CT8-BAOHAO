@@ -1,11 +1,11 @@
 name: Execute SSH Commands
 
 on:
-  workflow_dispatch: # 手动触发工作流
   schedule:
   # 使用cron表达式定义任务运行的时间
   # github使用utc时间(北京时间=UTC时间 +8小时)
   - cron: "25 2 10 * ?" #每月10日上午10:25触发
+  workflow_dispatch: # 手动触发工作流
 jobs:
   execute-commands:
     runs-on: ubuntu-latest
